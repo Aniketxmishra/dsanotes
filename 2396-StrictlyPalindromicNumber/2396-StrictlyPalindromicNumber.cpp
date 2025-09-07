@@ -1,4 +1,4 @@
-// Last updated: 9/6/2025, 2:11:45 PM
+// Last updated: 9/7/2025, 11:14:16 AM
 class Solution {
 public:
     bool isStrictlyPalindromic(int n) {
