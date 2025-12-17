@@ -1,22 +1,20 @@
-// Last updated: 12/8/2025, 2:27:51 PM
+// Last updated: 12/17/2025, 11:34:19 AM
 1class Solution {
 2public:
 3    string longestCommonPrefix(vector<string>& strs) {
-4        sort(strs.begin(), strs.end());
-5        string prefix= strs[0];
-6        string last= strs[strs.size()-1];
-7        int i=0;
-8        for( i =0; i<strs[0].size();i++){
-9            
-10            if(prefix[i]!=last[i]){
-11                break;
-12            }
-13             
-14
-15        }
-16        
-17       
-18    return prefix.substr(0,i);
-19    }        
-20    
-21};
+4       
+5        sort(strs.begin(),strs.end());
+6        string prefix = strs[0];
+7        string last = strs[strs.size()-1];
+8         int n= prefix.size();
+9        int i =0;
+10        for(i=0; i<n;i++){
+11            if(prefix[i]!= last[i])
+12            break;
+13        }
+14        return prefix.substr(0,i);
+15
+16       
+17    }        
+18    
+19};
